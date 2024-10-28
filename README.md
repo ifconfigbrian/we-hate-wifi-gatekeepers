@@ -1,10 +1,9 @@
-![cover](https://repository-images.githubusercontent.com/386759878/da75b7f3-2f50-4797-a36a-0d6dd8f7c6b3)
 
 # Portfolio
 
 My own personal portfolio website
 
-Inspired by [leerob](https://github.com/leerob/leerob.io)
+Inspired by [Alexander](https://github.com/alex289)
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Database**: [Vercel Postgres](https://vercel.com)
@@ -25,14 +24,14 @@ Inspired by [leerob](https://github.com/leerob/leerob.io)
 ## Running Locally
 
 ```bash
-git clone https://github.com/alex289/Portfolio.git
+git clone https://github.com/ifconfigbrian/main-portfolio.git
 cd Portfolio
 pnpm i
 pnpm dev
 ```
 
-Create a `.env` file similar to [`.env.example`](https://github.com/alex289/Portfolio/blob/main/.env.example)
+Create a `.env` file similar to [`.env.example`](https://github.com/ifconfigbrian/main-ortfolio/blob/main/.env.example)
 
 ## Cloning / Forking
 
-Please review the [license](https://github.com/alex289/Portfolio/blob/main/LICENSE) and remove all of my personal information (resume, blog posts, images, etc.).
+Please review the [license](https://github.com/ifconfigbrian/main-portfolio/blob/main/LICENSE) and remove all of my personal information (resume, blog posts, images, etc.).

@@ -57,11 +57,11 @@ export async function generateMetadata({
     },
   );
 
+  //open graph image
   const readingTimeText = t('reading-time', { minutes: readingTime });
 
-  const ogImage = `${
-    env.NEXT_PUBLIC_WEBSITE_URL
-  }/api/og?title=${title}&header=${formattedDate + ' • ' + readingTimeText}`;
+  const ogImage = `${env.NEXT_PUBLIC_WEBSITE_URL
+    }/api/og?title=${title}&header=${formattedDate + ' • ' + readingTimeText}`;
 
   return {
     title,
@@ -125,13 +125,12 @@ export default async function Blog({
             datePublished: post.publishedAt,
             dateModified: post.publishedAt,
             description: post.summary,
-            image: `https://${env.NEXT_PUBLIC_WEBSITE_URL}/og?title=${
-              post.title
-            }&header=${formattedDate + ' • ' + post.readingTime}`,
+            image: `https://${env.NEXT_PUBLIC_WEBSITE_URL}/og?title=${post.title
+              }&header=${formattedDate + ' • ' + post.readingTime}`,
             url: `https://${env.NEXT_PUBLIC_WEBSITE_URL}/${post.language}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'Alexander Konietzko',
+              name: 'Brian Njuguna',
             },
           }),
         }}

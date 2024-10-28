@@ -1,9 +1,11 @@
+//this is the main about page
+
 import avatar from 'public/static/images/konietzko_alexander.jpg';
 
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
+import Image from 'next/image';  //optimized images
 
 import env from '@/env.mjs';
 import Tools from '@/components/tools';
@@ -38,7 +40,7 @@ export async function generateMetadata({
 const AboutPage = () => {
   const t = useTranslations();
   const age = Math.floor(
-    (new Date().getTime() - new Date('2002-09-28').getTime()) / 3.15576e10,
+    (new Date().getTime() - new Date('2003-11-23').getTime()) / 3.15576e10,
   );
   return (
     <>
@@ -58,21 +60,21 @@ const AboutPage = () => {
           <li>
             GitHub:{' '}
             <a
-              href="https://github.com/alex289"
+              href="https://github.com/ifconfigbrian"
               target="_blank"
               rel="noreferrer noopener"
               className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
-              @alex289
+              @ifconfigbrian
             </a>
           </li>
           <li>
             Twitter:{' '}
             <a
-              href="https://twitter.com/_alex289"
+              href="https://twitter.com/ifconfigbrian"
               target="_blank"
               rel="noreferrer noopener"
               className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
-              @_alex289
+              @ifconfigbrian
             </a>
           </li>
           <li>
@@ -88,11 +90,11 @@ const AboutPage = () => {
           <li>
             Quicklinks:{' '}
             <a
-              href="https://alexanderkonietzko-links.vercel.app"
+              href=""  //add my app link
               target="_blank"
               rel="noreferrer noopener"
               className="text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400">
-              https://alexanderkonietzko-links.vercel.app
+              add my portfolio link later
             </a>
           </li>
         </ul>

@@ -1,4 +1,4 @@
-import profilePic from 'public/static/images/konietzko_alexander.jpg';
+import profilePic from 'public/static/images/konietzko_alexander.jpg'; //profile pic
 
 import { ArrowRight } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
@@ -29,10 +29,10 @@ const Index = async ({ params: { locale } }: IndexProps) => {
       <div className="flex flex-col-reverse items-start sm:flex-row">
         <div className="flex flex-col pr-8">
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-            Alexander Konietzko
+            Brian Njuguna
           </h1>
           <h2 className="mb-4 text-gray-700 dark:text-gray-200">
-            {t('index-page.title')} Netgo
+            {t('index-page.title')} HTB
           </h2>
           <p className="mb-16 text-gray-600 dark:text-gray-300">
             {t('index-page.intro')}
@@ -40,7 +40,7 @@ const Index = async ({ params: { locale } }: IndexProps) => {
         </div>
         <div className="relative mb-8 mr-auto w-[80px] sm:mb-0 sm:w-[176px]">
           <Image
-            alt="Alexander Konietzko"
+            alt="Brian Njuguna"
             height={500}
             width={500}
             src={profilePic}

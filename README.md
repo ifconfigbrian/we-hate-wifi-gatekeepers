@@ -25,7 +25,7 @@ Inspired by [Alexander](https://github.com/alex289)
 
 ```bash
 git clone https://github.com/ifconfigbrian/main-portfolio.git
-cd Portfolio
+cd main-portfolio
 pnpm i
 pnpm dev
 ```

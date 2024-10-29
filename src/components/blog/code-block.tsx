@@ -1,6 +1,6 @@
 'use client';
 
-import clsx from 'clsx';
+import clsx from 'clsx'; //conditionally joining class names
 import { ClipboardCheckIcon, ClipboardCopyIcon } from 'lucide-react';
 import { useRef, useState } from 'react';
 

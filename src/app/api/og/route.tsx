@@ -63,7 +63,7 @@ export function GET(req: NextRequest) {
             Alexander Konietzko
             <img
               src={`${env.NEXT_PUBLIC_WEBSITE_URL}/static/images/konietzko_alexander.png`}
-              alt="Alexander Konietzko"
+              alt="Brian"
               style={{
                 width: '3em',
                 marginLeft: 'auto',

@@ -57,7 +57,7 @@ const ProjectsPage = async ({ params: { locale } }: ProjectsProps) => {
       </h1>
       <div className="flex gap-4 flex-col sm:flex-row w-full">
         <a
-          href="https://github.com/alex289"
+          href="https://github.com/ifconfigbrian"
           target="_blank"
           rel="noreferrer noopener"
           className="mx-auto w-full mb-4 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-all hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -103,7 +103,7 @@ const ProjectsPage = async ({ params: { locale } }: ProjectsProps) => {
           </ul>
         </a>
         <a
-          href="https://github.com/alex289"
+          href="https://github.com/ifconfigbrian"
           target="_blank"
           rel="noreferrer noopener"
           className="mx-auto w-full mb-4 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-all hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
@@ -136,7 +136,7 @@ const ProjectsPage = async ({ params: { locale } }: ProjectsProps) => {
         )}
 
         <a
-          href="https://github.com/alex289?tab=repositories"
+          href="https://github.com/ifconfigbrian?tab=repositories"
           target="_blank"
           rel="noreferrer noopener">
           <button className="flex items-center mt-6">

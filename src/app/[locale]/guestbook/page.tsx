@@ -1,6 +1,6 @@
-import { desc } from 'drizzle-orm';
+import { desc } from 'drizzle-orm'; //ordering in descending order
 import { getTranslations } from 'next-intl/server';
-import { Suspense } from 'react';
+import { Suspense } from 'react'; //asynchronous components
 
 import env from '@/env.mjs';
 import GuestbookEntry from '@/components/guestbook/guestbook-entry';

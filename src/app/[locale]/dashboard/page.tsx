@@ -1,29 +1,33 @@
-import { count, sum } from 'drizzle-orm';
-import { getTranslations } from 'next-intl/server';
-import { redirect } from 'next/navigation';
+import { count, sum } from 'drizzle-orm'; //counting & summing values in db
+import { getTranslations } from 'next-intl/server';  //translations
+import { redirect } from 'next/navigation'; //redirecting users
 
-import env from '@/env.mjs';
-import Metric from '@/components/metric';
+import env from '@/env.mjs'; //load environment variables
+import Metric from '@/components/metric'; //showing metrics
 import { SignOutButton } from '@/components/sign-out';
 import Track from '@/components/track';
-import { auth } from '@/lib/auth';
-import { getBlogPosts } from '@/lib/blog';
-import { db } from '@/lib/db';
-import { guestbook, views } from '@/lib/db/schema';
-import { getTopTracks } from '@/lib/spotify';
+import { auth } from '@/lib/auth';  //handling authentication
+import { getBlogPosts } from '@/lib/blog'; //retrieve blog posts
+import { db } from '@/lib/db';  //database connection
+import { guestbook, views } from '@/lib/db/schema'; //database schemas for guestbook entries
+import { getTopTracks } from '@/lib/spotify'; //fetch my spotify top tracks
 
 import type { Metadata } from 'next/types';
 
+//define shape of props
 interface DashboardProps {
   params: {
     locale: string;
   };
 }
 
+//prepare static parameters for different locales
+
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'de' }];
 }
 
+//generate metadata
 export function generateMetadata(): Metadata {
   return {
     title: 'Dashboard',
@@ -36,6 +40,7 @@ export function generateMetadata(): Metadata {
   };
 }
 
+//fetch views count
 const getViewsCount = async () => {
   const data = await db
     .select({
@@ -47,6 +52,7 @@ const getViewsCount = async () => {
   return data[0]?.total ?? 0;
 };
 
+//fetch guestbook entries
 const getGuestbookEntriesCount = async () => {
   const data = await db
     .select({
@@ -58,6 +64,7 @@ const getGuestbookEntriesCount = async () => {
   return data[0]?.total ?? 0;
 };
 
+//main dashboard component
 const DashboardPage = async ({ params: { locale } }: DashboardProps) => {
   const [session, t, viewsCount, guesbookEntriesCount, topTracks] =
     await Promise.all([
@@ -68,6 +75,7 @@ const DashboardPage = async ({ params: { locale } }: DashboardProps) => {
       getTopTracks(),
     ]);
 
+  //redirect unauthorised users
   if (!session) {
     return redirect('/api/auth/signin?callbackUrl=/dashboard');
   }
@@ -76,6 +84,7 @@ const DashboardPage = async ({ params: { locale } }: DashboardProps) => {
     return redirect('/');
   }
 
+  //render the dashboard
   return (
     <div className="mx-auto mb-16 flex w-full max-w-3xl flex-col items-start justify-center">
       <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-4xl">

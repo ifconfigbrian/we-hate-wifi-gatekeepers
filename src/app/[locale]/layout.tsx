@@ -32,17 +32,17 @@ export function generateMetadata({
   return {
     metadataBase: new URL(env.NEXT_PUBLIC_WEBSITE_URL),
     title: {
-      default: 'Alexander Konietzko',
-      template: '%s | Alexander Konietzko',
+      default: 'Brian Njuguna',
+      template: '%s | Brian Njuguna',
     },
-    authors: [{ name: 'Alexander Konietzko' }],
-    applicationName: 'Alexander Konietzko',
-    description: 'Software developer, TypeScript enthusiast and dual student',
+    authors: [{ name: 'Brian Njuguna' }],
+    applicationName: 'Brian Njuguna',
+    description: 'Software developer, Security Analyst and dual student',
     openGraph: {
-      title: 'Alexander Konietzko',
-      description: 'Software developer, TypeScript enthusiast and dual student',
+      title: 'Brian Njuguna',
+      description: 'Software developer, Security Analyst and dual student',
       url: env.NEXT_PUBLIC_WEBSITE_URL,
-      siteName: 'Alexander Konietzko',
+      siteName: 'Brian Njuguna',
       images: [
         {
           url: `${env.NEXT_PUBLIC_WEBSITE_URL}/api/og`,
@@ -65,9 +65,9 @@ export function generateMetadata({
       },
     },
     twitter: {
-      title: 'Alexander Konietzko',
+      title: 'Brian Njuguna',
       card: 'summary_large_image',
-      description: 'Software developer, TypeScript enthusiast and dual student',
+      description: 'Software developer, Security Analyst and dual student',
       images: [`${env.NEXT_PUBLIC_WEBSITE_URL}/api/og`],
     },
     icons: {

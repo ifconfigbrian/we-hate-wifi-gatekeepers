@@ -21,12 +21,12 @@ export default function Footer() {
       text: 'Blog',
     },
     {
-      href: 'https://github.com/alex289/dotfiles',
+      href: 'https://github.com/ifconfigbrian/dotfiles',
       id: 'footer.my-setup',
       text: t('footer.my-setup'),
     },
     {
-      href: 'https://alexanderkonietzko-analytics.vercel.app/share/umAbxBDxID0MgUDd/Portfolio',
+      href: '',
       id: 'footer.analytics',
       text: t('footer.analytics'),
     },
@@ -41,7 +41,7 @@ export default function Footer() {
       text: t('guestbook.title'),
     },
     {
-      href: 'https://github.com/alex289/Portfolio',
+      href: 'https://github.com/ifconfig/main-ortfolio',
       id: 'footer.sourcecode',
       text: t('footer.sourcecode'),
     },
@@ -57,12 +57,12 @@ export default function Footer() {
       text: t('main.projects'),
     },
     {
-      href: 'https://github.com/alex289',
+      href: 'https://github.com/ifconfigbrian',
       id: 'footer.github',
       text: 'GitHub',
     },
     {
-      href: 'mailto:me@alexanderkonietzko.com',
+      href: 'mailto:njugunabriian@gmail.com',
       id: 'footer.contact',
       text: t('footer.contact'),
     },
@@ -83,9 +83,8 @@ export default function Footer() {
             link.href.startsWith('/') ? (
               <Link
                 key={link.id}
-                href={`${link.noTranslate !== true ? '/' + locale : ''}${
-                  link.href
-                }`}
+                href={`${link.noTranslate !== true ? '/' + locale : ''}${link.href
+                  }`}
                 id={link.id}
                 className="text-gray-500 transition hover:text-gray-600 dark:text-gray-200 dark:hover:text-gray-50">
                 {link.text}
@@ -133,7 +132,7 @@ export default function Footer() {
           .
         </p>
         <p className="mx-auto text-sm text-gray-500 dark:text-gray-300">
-          © {new Date().getFullYear()} Alexander Konietzko
+          © {new Date().getFullYear()} Brian Njuguna
         </p>
       </footer>
     </div>

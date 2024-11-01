@@ -26,11 +26,6 @@ export default function Footer() {
       text: t('footer.my-setup'),
     },
     {
-      href: '',
-      id: 'footer.analytics',
-      text: t('footer.analytics'),
-    },
-    {
       href: '/about',
       id: 'footer.about',
       text: t('main.about'),
@@ -41,7 +36,7 @@ export default function Footer() {
       text: t('guestbook.title'),
     },
     {
-      href: 'https://github.com/ifconfig/main-ortfolio',
+      href: 'https://github.com/ifconfigbrian/main-portfolio',
       id: 'footer.sourcecode',
       text: t('footer.sourcecode'),
     },

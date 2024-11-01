@@ -8,7 +8,6 @@
     "my-setup": "My dotfiles",
     "sourcecode": "Source code",
     "contact": "Contact",
-    "analytics": "Analytics",
     "sitemap": "Sitemap",
     "powered": "Powered by ",
     "and": "and ",
@@ -24,17 +23,17 @@
         "slug": "initial-commit"
       },
       "2": {
-        "title": "The Best PowerShell Terminal Setup",
+        "title": "I will add stuff here about cybersecurity",
         "slug": "terminal-setup"
       },
       "3": {
-        "title": "How to Deploy a Fullstack Web App on Vercel?",
-        "slug": "vercel-deployment"
+        "title": "I will add stuff here about cybersecurity",
+        "slug": "cyber-nerd"
       }
     }
   },
   "about-page": {
-    "text-1": "Hey, I'm Brian. I'm {age} years \nold and come from Germany. I live in Nairobi and spend my free time \nplaying chess, do sports or enjoying time with friends and family.",
+    "text-1": "Hey, I'm Brian. I'm {age} years \nold and come from Kenya. I live in Nairobi and spend my free time \nplaying chess, do sports or enjoying time with friends and family.",
     "text-2": "I started working with computers when I was young and started \nprogramming in school. After I graduated I began my dual study at \nNetgo GmbH where I work and Westfälische Hochschule where I study.",
     "text-3": "I'm currently learning .NET Core and Angular but my favourite framework is \nNextJs. In the future I want to build my own Kubernetes cluster with \nbackend services, database integration and a solid frontend combined \nby Nginx.",
     "website": "Website",
@@ -43,7 +42,7 @@
       "text": "Those are the tools I almost use daily. I really enjoy finding new technologies improving my workflow.",
       "tailwind": "When it comes to CSS, I always use TailwindCSS. It is a great tool for styling your website really fast.",
       "next": "My go-to framework for building web applications. The quality of the codebase is fantastic.",
-      "vercel": "The most seamless way to deploy your website. I use it for all of my projects.",
+      "vercel": "The most seamless way to deploy your website. I use it for almost all of my projects.",
       "vscode": "VS Code is the text editor I reach for most often, given it's range of extensions."
     },
     "uses": {
@@ -63,7 +62,7 @@
         "description": "I finished my school :D"
       },
       "2": {
-        "title": "Dual study at netgo / Westfälische Hochschule",
+        "title": "Dual study at Kenya Institute Of Software Engineering / HTB",
         "description": "I started my first job as a software engineer trainee at netgo. In combination I studied software systems (Informatics, B. SC.)."
       }
     }
@@ -79,7 +78,7 @@
     "return-home": "Return home"
   },
   "blog": {
-    "description": "I've been writing online since 2022, mostly about web devlopment and random stuff. In total, I've written {amount} articles on my blog. Use the search below to filter by title.",
+    "description": "I've been writing online since 2024, mostly about Cybersecurity and random stuff. In total, I've written {amount} articles on my blog. Use the search below to filter by title.",
     "no-posts": "No posts found.",
     "all-posts": "All Posts",
     "search": "Search",

@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "main-portfolio",
   "version": "1.0.0",
   "private": true,
   "description": "personal portfolio website",
@@ -29,9 +29,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alex289/Portfolio/issues"
+    "url": "https://github.com/ifconfigbrian/main-portfolio/issues"
   },
-  "homepage": "https://alexanderkonietzko.vercel.app",
+  "homepage": "",
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@tailwindcss/typography": "^0.5.15",

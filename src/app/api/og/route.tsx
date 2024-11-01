@@ -60,7 +60,7 @@ export function GET(req: NextRequest) {
               display: 'flex',
               alignItems: 'center',
             }}>
-            Alexander Konietzko
+            Brian Njuguna
             <img
               src={`${env.NEXT_PUBLIC_WEBSITE_URL}/static/images/konietzko_alexander.png`}
               alt="Brian"

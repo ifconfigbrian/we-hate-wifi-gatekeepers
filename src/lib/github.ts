@@ -110,7 +110,7 @@ export const getStats = async () => {
         }
         `,
       variables: {
-        login: 'alex289',
+        login: 'ifconfigbrian',
       },
     }),
   });
@@ -196,7 +196,7 @@ export const getProjects = async (perPage = 10) => {
         }
         `,
       variables: {
-        login: 'alex289',
+        login: 'ifconfigbrian',
         perPage: perPage,
       },
     }),
